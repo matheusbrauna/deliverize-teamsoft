@@ -1,0 +1,24 @@
+.header {
+  background-color: #f4f4f4;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.5rem;
+}
+
+.header__logo {
+  width: 9.375rem;
+}
+
+.header__arrow-left-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.header__shopping-cart {
+  width: 1.5rem;
+  height: 1.5rem;
+}
