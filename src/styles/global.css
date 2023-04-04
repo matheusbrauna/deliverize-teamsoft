@@ -19,4 +19,15 @@ img {
   width: 100%;
   max-width: 75rem;
   padding: 0 1rem;
+  margin: 0 auto;
+}
+
+main {
+  padding-block: 1rem;
+}
+
+main > .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }

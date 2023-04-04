@@ -5,7 +5,11 @@ export function App() {
   return (
     <>
       <Header />
-      <Product />
+      <main>
+        <div className="container">
+          <Product />
+        </div>
+      </main>
     </>
   )
 }

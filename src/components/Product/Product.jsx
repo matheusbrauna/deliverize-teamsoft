@@ -1,10 +1,12 @@
 import './Product.css'
 import hamburguerImg from '../../assets/hamburguer.png'
+import { Ingredients } from '../Ingredients/Ingredients'
+import { QuantityInput } from '../QuantityInput/QuantityInput'
 
 export function Product() {
   return (
     <div className="product">
-      <div className="container">
+      <div className="product__col-1">
         <div className="product__image">
           <img src={hamburguerImg} alt="" />
         </div>
@@ -22,6 +24,13 @@ export function Product() {
               R$34,95
             </span>
           </div>
+        </div>
+      </div>
+      <div className="product__col-2">
+        <Ingredients />
+        <div className="product__confirmation">
+          <QuantityInput />
+          <button className="product__btn">Adicionar</button>
         </div>
       </div>
     </div>
