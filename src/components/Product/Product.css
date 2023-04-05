@@ -63,7 +63,7 @@
   color: #fff;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   .product {
     flex-direction: row;
     margin-top: 1.5rem;

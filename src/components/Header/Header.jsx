@@ -2,6 +2,8 @@ import './Header.css'
 import arrowLeft from '../../assets/arrow-left.svg'
 import logo from '../../assets/logo.svg'
 import shoppingCart from '../../assets/shopping-cart.svg'
+import login from '../../assets/account-circle.svg'
+import arrowDown from '../../assets/arrow-down.svg'
 
 export function Header() {
   return (
@@ -13,11 +15,31 @@ export function Header() {
           className="header__arrow-left-icon"
         />
         <img src={logo} alt="Logo" className="header__logo" />
-        <img
-          src={shoppingCart}
-          alt="Carrinho"
-          className="header__shopping-cart"
-        />
+        <nav className="header__nav">
+          <div className="header__delivery">
+            <div>
+              <p>Entrega:</p>
+              <p>R. Antonio Braune, 222</p>
+            </div>
+            <img src={arrowDown} alt="" />
+          </div>
+          <input
+            type="text"
+            className="header__search"
+            placeholder="Busque por estabelecimento ou produtos"
+          />
+          <div className="header__login">
+            <img src={login} alt="Carrinho" />
+            <p>Entrar</p>
+          </div>
+          <div className="header__shopping-cart">
+            <div>
+              <img src={shoppingCart} alt="Carrinho" />
+              <span className="header__cart-quantity">1</span>
+            </div>
+            <p>Carrinho</p>
+          </div>
+        </nav>
       </div>
     </header>
   )
