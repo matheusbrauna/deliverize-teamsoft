@@ -4,6 +4,27 @@
   box-sizing: border-box;
 }
 
+:root {
+  --white: #fff;
+  --yellow-300: #FEBC10;
+  --yellow-500: #E8A634;
+  --yellow-700: #E49700;
+
+  --orange-300: #F09035;
+  --orange-500: #DC6E05;
+
+  --gray-700: #4E4E4E;
+  --gray-600: #656363;
+  --gray-500: #686868;
+  --gray-300: #AEB6C1;
+  --gray-100: #F8F8F8;
+  --gray-50: #F4F4F4;
+
+  --red-300: #D80000;
+  --red-500: #ED3237;
+  --red-700: #BC2E31;
+}
+
 html {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;

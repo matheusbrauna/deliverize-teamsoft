@@ -22,12 +22,12 @@
 .product__name {
   font-weight: 500;
   font-size: 2.8rem;
-  color: #4E4E4E;
+  color: var(--gray-700);
 }
 
 .product__description {
   font-size: 2rem;
-  color: #4E4E4E
+  color: var(--gray-700)
 }
 
 .product__price-container {
@@ -40,11 +40,11 @@
 }
 
 .product__price--original {
-  color: #DC6E05;
+  color: var(--orange-500);
 }
 
 .product__price--discount {
-  color: #4E4E4E;
+  color: var(--gray-700);
   text-decoration: line-through;
 }
 
@@ -86,11 +86,11 @@
   }
   
   .product__price--original {
-    color: #DC6E05;
+    color: var(--orange-500);
   }
   
   .product__price--discount {
-    color: #4E4E4E;
+    color: var(--gray-700);
     text-decoration: line-through;
   }
 }

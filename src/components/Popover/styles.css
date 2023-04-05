@@ -1,7 +1,7 @@
 .popover {
   position: fixed;
   transform: translateX(-50%);
-  background-color: #fff;
+  background-color: var(--white);
   min-width: 13rem;
   top: 50%;
   left: 50%;
@@ -12,7 +12,7 @@
 }
 
 .popover__header {
-  background-color: #f09035;
+  background-color: var(--orange-300);
   overflow: hidden;
   padding: 0.8rem;
 }
@@ -20,7 +20,7 @@
 .popover__title-main {
   font-weight: 700;
   font-size: 1.8rem;
-  color: #fff;
+  color: var(--white);
   white-space: nowrap;
 }
 
@@ -31,7 +31,7 @@
 .popover__title {
   font-weight: 700;
   font-size: 1.4rem;
-  color: #bc2e31;
+  color: var(--red-700);
   margin-bottom: 0.8rem;
 }
 
