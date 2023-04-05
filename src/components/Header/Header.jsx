@@ -4,8 +4,19 @@ import logo from '../../assets/logo.svg'
 import shoppingCart from '../../assets/shopping-cart.svg'
 import login from '../../assets/account-circle.svg'
 import arrowDown from '../../assets/arrow-down.svg'
+import { Popover } from '../Popover/Popover'
+import { useState } from 'react'
 
 export function Header() {
+  const [showToast, setShowToast] = useState(false)
+
+  const handleShowToast = () => {
+    setShowToast(true)
+    setTimeout(() => {
+      setShowToast(false)
+    }, 3000)
+  }
+
   return (
     <header className="header">
       <div className="container">
@@ -36,6 +47,7 @@ export function Header() {
             <div>
               <img src={shoppingCart} alt="Carrinho" />
               <span className="header__cart-quantity">1</span>
+              {showToast && <Popover />}
             </div>
             <p>Carrinho</p>
           </div>
