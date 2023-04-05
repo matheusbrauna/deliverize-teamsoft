@@ -1,7 +1,7 @@
-import './QuantityInput.css'
+import './styles.css'
 
 export function QuantityInput({
-  quantity,
+  quantity = 1,
   onIncreaseQuantity,
   onDecreaseQuantity,
   size = 'standard',
@@ -9,11 +9,12 @@ export function QuantityInput({
   return (
     <div className={`quantity-input quantity-input--${size}`}>
       <button
-        className="quantity-input__btn"
+        className="quantity-input__btn quantity-input__btn--decrease"
         disabled={quantity <= 1}
         onClick={onDecreaseQuantity}
       >
         <svg
+          className="quantity-input__icon"
           width="14"
           height="3"
           viewBox="0 0 14 3"
@@ -32,8 +33,12 @@ export function QuantityInput({
         readOnly
         value={quantity}
       />
-      <button className="quantity-input__btn" onClick={onIncreaseQuantity}>
+      <button
+        className="quantity-input__btn quantity-input__btn--increase"
+        onClick={onIncreaseQuantity}
+      >
         <svg
+          className="quantity-input__icon"
           width="14"
           height="15"
           viewBox="0 0 14 15"
@@ -42,7 +47,7 @@ export function QuantityInput({
         >
           <path
             d="M7.875 7.08417V0.959167H6.125V7.08417H0V8.83417H6.125V14.9592H7.875V8.83417H14V7.08417H7.875Z"
-            fill={quantity <= 1 ? '#AEB6C1' : '#D80000'}
+            fill="#D80000"
           />
         </svg>
       </button>

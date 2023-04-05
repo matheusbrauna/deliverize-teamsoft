@@ -1,4 +1,4 @@
-import './RadioInput.css'
+import './styles.css'
 
 export function RadioInput({ children, value, ...rest }) {
   return (

@@ -1,0 +1,92 @@
+.ingredients {
+  padding: 3.2rem;
+  border: 1px solid #686868;
+  border-radius: 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.ingredients__card {
+  padding: 1.6rem;
+  background-color: rgba(253, 215, 14, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.ingredients__card__title {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #4E4E4E;
+}
+
+.ingredients__card__description {
+  font-size: 1.2rem;
+  color: #E49700;
+}
+
+
+.ingredients__radio-input {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.ingredients__confirmation {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.ingredients__quantity-input {
+  height: 4rem;
+  width: 14rem;
+}
+
+.ingredients__btn {
+  border: 0;
+  background: #f09035;
+  border-radius: 4px;
+  height: 4rem;
+  width: 20rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.ingredient {
+  height: 9rem;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ingredient:not(:last-child) {
+  border-bottom: 1px solid #E8A634;
+}
+
+.ingredient__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.ingredient__title {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #4E4E4E;
+}
+
+.ingredient__price {
+  font-size: 1.4rem;
+  color: #F09035;
+}
+
+.ingredient__quantity-input {
+  width: 9rem;
+}
