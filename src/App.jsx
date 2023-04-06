@@ -3,18 +3,17 @@ import { Header } from './components/Header'
 import { Ingredients } from './components/Ingredients'
 import { Loading } from './components/Loading'
 import { useProducts } from './hooks/useProducts'
+import { useIngredients } from './hooks/useIngredients'
 
 export function App() {
   const { products, isLoading } = useProducts()
+  const { ingredients } = useIngredients()
   const renderProducts = products.map((product) => (
     <Product key={product.id} product={product} />
   ))
-  const renderIngredients = products
-    .map((product) => product.ingredients)
-    .map((ingredient) => ingredient[0].itens)
-    .map((item) => (
-      <Ingredients key={item} ingredients={item} product={products[0]} />
-    ))
+  const renderIngredients = ingredients.map((item) => (
+    <Ingredients key={item} ingredients={item} />
+  ))
 
   return (
     <div className="app">

@@ -65,11 +65,7 @@ export function Ingredients({ ingredients }) {
       </div>
       <div className="ingredients__confirmation">
         <div className="ingredients__quantity-input">
-          <QuantityInput
-            quantity={1}
-            onDecreaseQuantity={handleDecreaseQuantity}
-            onIncreaseQuantity={handleIncreaseQuantity}
-          />
+          <QuantityInput quantity={1} />
         </div>
         <button onClick={handleShowPopover} className="ingredients__btn">
           Adicionar
